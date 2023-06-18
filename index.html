@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .slider {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .slider__input {
+            width: 100%;
+        }
+        .slider__image {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        #box {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- #1 -->
+    <div class="slider">
+        <input type="range" min="1" max="100" value="50" class="slider__input">
+        <img src="assets/img/Icecat1-300x300.svg.png" class="slider__image">
+    </div>
+    <hr>
+    <!-- #2 -->
+    <div id="box"></div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
